@@ -1,0 +1,232 @@
+checking for -Werror=unknown-warning-option... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L  -Werror=unknown-warning-option   -Wl,--output-def=libx264.def -static-libgcc -o conftest
+cc1.exe: error: -Werror=unknown-warning-option: no option -Wunknown-warning-option
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lshell32... yes
+checking whether windres works... yes
+checking whether !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) is true... no
+--------------------------------------------------
+conftest.c:1:26: fatal error: winapifamily.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <winapifamily.h>
+#if !(!WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)) 
+#error  
+#endif 
+--------------------------------------------------
+x264 configure script
+Command line options: "--disable-asm" "--enable-shared" "--extra-ldflags=-Wl,--output-def=libx264.def" "--extra-ldflags=-static-libgcc"
+
+checking whether gcc works... yes
+checking whether gcc supports for( int i = 0; i < 9; i++ ); with -std=gnu99... yes
+checking for -mpreferred-stack-boundary=6... yes
+checking for return log2f(2); in math.h... yes
+checking for sws_init_context(0,0,0); in libswscale/swscale.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6   -lswscale -lavutil  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:32: fatal error: libswscale/swscale.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <libswscale/swscale.h>
+int main (void) { sws_init_context(0,0,0); return 0; }
+--------------------------------------------------
+checking for -lpostproc... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lpostproc  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpostproc
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lavcodec... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lavcodec  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lavcodec
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lswscale... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lswscale  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lswscale
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lavutil... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lavutil  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lavutil
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lm... yes
+checking for -lz... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lz  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lz
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lbz2... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lbz2  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lbz2
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lavifil32... yes
+checking for -lws2_32... yes
+checking for av_frame_free(0); in libavformat/avformat.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6   -L. -lavformat -lm -lavifil32 -lws2_32  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:34: fatal error: libavformat/avformat.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <libavformat/avformat.h>
+int main (void) { av_frame_free(0); return 0; }
+--------------------------------------------------
+checking for FFMS_DestroyVideoSource(0); in ffms.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6   -lffms2  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:18: fatal error: ffms.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <ffms.h>
+int main (void) { FFMS_DestroyVideoSource(0); return 0; }
+--------------------------------------------------
+checking for FFMS_DestroyVideoSource(0); in ffms.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6   -lffms2 -lstdc++ -L. -lavformat -lm -lavifil32 -lws2_32  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:18: fatal error: ffms.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <ffms.h>
+int main (void) { FFMS_DestroyVideoSource(0); return 0; }
+--------------------------------------------------
+checking for lsmash.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6   -llsmash  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:20: fatal error: lsmash.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <lsmash.h>
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lz... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lz  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+c:/mingw/bin/../lib/gcc/mingw32/5.3.0/../../../../mingw32/bin/ld.exe: cannot find -lz
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lws2_32... yes
+checking for -lwinmm... yes
+checking for gpac/isomedia.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6  -lgpac_static -lws2_32 -lwinmm  -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c:1:27: fatal error: gpac/isomedia.h: No such file or directory
+compilation terminated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <gpac/isomedia.h>
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3}; in stdint.h... yes
+checking for -fno-tree-vectorize... yes
+checking for -fno-zero-initialized-in-bss... yes
+checking for fseeko(stdin,0,0); in stdio.h... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -O3 -ffast-math -m32  -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE -mpreferred-stack-boundary=6 -fomit-frame-pointer -fno-tree-vectorize -fno-zero-initialized-in-bss    -lshell32 -m32  -Wl,--output-def=libx264.def -static-libgcc  -Wl,--large-address-aware -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+conftest.c: In function 'main':
+conftest.c:2:19: warning: implicit declaration of function 'fseeko' [-Wimplicit-function-declaration]
+ int main (void) { fseeko(stdin,0,0); return 0; }
+                   ^
+C:\Users\zj\AppData\Local\Temp\ccIOyqHM.o:conftest.c:(.text.startup+0x27): undefined reference to `fseeko'
+collect2.exe: error: ld returned 1 exit status
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <stdio.h>
+int main (void) { fseeko(stdin,0,0); return 0; }
+--------------------------------------------------
+checking for fseeko64(stdin,0,0); in stdio.h... yes
+checking for -Wshadow... yes
+checking for -Wmaybe-uninitialized... yes
+
+platform:      X86
+byte order:    little-endian
+system:        WINDOWS
+cli:           yes
+libx264:       internal
+shared:        yes
+static:        no
+asm:           no
+interlaced:    yes
+avs:           avisynth
+lavf:          no
+ffms:          no
+mp4:           no
+gpl:           yes
+thread:        win32
+opencl:        yes
+filters:       crop select_every 
+lto:           no
+debug:         no
+gprof:         no
+strip:         no
+PIC:           no
+bit depth:     8
+chroma format: all

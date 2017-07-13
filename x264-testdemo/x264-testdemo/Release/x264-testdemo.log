@@ -1,0 +1,22 @@
+﻿生成启动时间为 2017/7/13 15:53:56。
+     1>项目“E:\git_x264-20170705-2245\x264-testdemo\x264-testdemo\x264-testdemo.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../depend/include/ /Zi /nologo /W3 /WX- /Od /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt simplest_x264_encoder.cpp
+         simplest_x264_encoder.cpp
+     1>simplest_x264_encoder.cpp(19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>simplest_x264_encoder.cpp(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git_x264-20170705-2245\x264-testdemo\Release\x264-testdemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../depend/lib32/ libx264.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\git_x264-20170705-2245\x264-testdemo\Release\x264-testdemo.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git_x264-20170705-2245\x264-testdemo\Release\x264-testdemo.lib" /MACHINE:X86 /SAFESEH Release\simplest_x264_encoder.obj
+         LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
+         x264-testdemo.vcxproj -> E:\git_x264-20170705-2245\x264-testdemo\Release\x264-testdemo.exe
+       PostBuildEvent:
+         post_copy_win32_release.bat
+         :VCEnd
+         已复制         1 个文件。
+     1>已完成生成项目“E:\git_x264-20170705-2245\x264-testdemo\x264-testdemo\x264-testdemo.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.55
